@@ -20,7 +20,7 @@ function App() {
     if (movendo) {
       moverBotao();
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, [movendo]);
 
   const moverBotao = () => {
@@ -47,7 +47,7 @@ function App() {
             setTimeout(() => {
               setMovendo(false);
               setParado(true);
-              setFugasRestantes(4); // resetar para próximo ciclo
+              setFugasRestantes(4); 
             }, 800);
           } else {
             setTimeout(moverBotao, 500);
@@ -67,7 +67,6 @@ function App() {
   const handleSim = () => {
     if (parado) {
       alert('Aí sim! 💖 Agora vem a parte especial...');
-      // Aqui você pode colocar o próximo passo, resetar ou navegar
       setParado(false);
       setPos({ top: 0, left: 0 });
     }
@@ -92,7 +91,7 @@ function App() {
               onMouseEnter={handleSimMouseEnter}
               onClick={() => {
                 if (parado) {
-                  setEtapa(2); // vai para tela da Marcelle
+                  setEtapa(2);
                   setParado(false);
                   setPos({ top: 0, left: 0 });
                 }
@@ -178,7 +177,8 @@ function App() {
               return;
             }
 
-            alert('Hmm... seus dados foram analisados... Você é perfeita! 😍');
+            setEtapa(5);
+
           }}>
 
 
@@ -191,10 +191,47 @@ function App() {
         </>
       )}
 
+      {etapa === 5 && (
+        <>
+          <h1>Brincadeira, são apenas 2 páginas 😅</h1>
+          <p>Ainda não estou convencido que você seja a Marcelle...<br />Preencha os dados abaixo:</p>
+
+          <form className="formulario" onSubmit={(e) => {
+            e.preventDefault();
+
+            const form = e.target;
+            const nomeNamorado = form[0].value.trim();
+            const idadeNamorado = form[1].value.trim();
+            const desejaAbrir = form[2].value;
+
+            if (nomeNamorado.toLowerCase() !== 'david') {
+              alert('Errado! 😠 Esse não é o nome do seu namorado de verdade!');
+              return;
+            }
+
+            if (desejaAbrir !== 'Sim') {
+              alert('Você não quer abrir o seu presente ? 😢');
+              return;
+            }
+
+            alert('Parabéns! Você desbloqueou o presente secreto! 💝');
+            // Redirecionar ou exibir proxima mensagem
+          }}>
+            <input type="text" placeholder="Nome do seu namorado" required />
+            <input type="number" placeholder="Idade dele" required />
+
+            <select required>
+              <option value="">Você deseja realmente abrir esse presente?</option>
+              <option value="Sim">Sim</option>
+              <option value="Não">Não</option>
+            </select>
+
+            <button type="submit">Finalizar</button>
+          </form>
+        </>
+      )}
     </div>
-
   );
-
 }
 
 export default App;
