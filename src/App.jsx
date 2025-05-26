@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './App.css';
+import ImageSlider from './components/ImageSlider';
+
 
 function App() {
   const [pos, setPos] = useState({ top: 0, left: 0 });
@@ -47,7 +49,7 @@ function App() {
             setTimeout(() => {
               setMovendo(false);
               setParado(true);
-              setFugasRestantes(4); 
+              setFugasRestantes(4);
             }, 800);
           } else {
             setTimeout(moverBotao, 500);
@@ -214,8 +216,9 @@ function App() {
               return;
             }
 
-            alert('Parabéns! Você desbloqueou o presente secreto! 💝');
-            // Redirecionar ou exibir proxima mensagem
+            setEtapa(6);
+            alert('Parabéns! Você é a Marcelle Marinho de Oliveira! 🎉\nAgora, vamos abrir o presente!');
+
           }}>
             <input type="text" placeholder="Nome do seu namorado" required />
             <input type="number" placeholder="Idade dele" required />
@@ -230,6 +233,15 @@ function App() {
           </form>
         </>
       )}
+
+      {etapa === 6 && (
+        <>
+          <h1>💝 Surpresa! 💝</h1>
+          <p>Essas são apenas algumas das nossas memórias juntos...<br />Te amo muito! 💖</p>
+          <ImageSlider />
+        </>
+      )}
+
     </div>
   );
 }
