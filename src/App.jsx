@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './App.css';
 import ImageSlider from './components/ImageSlider';
-
+import FallingHearts from './components/FallingHearts';
 
 function App() {
   const [pos, setPos] = useState({ top: 0, left: 0 });
@@ -235,9 +235,14 @@ function App() {
       )}
 
       {etapa === 6 && (
-        <>
-          <h1>💝 Surpresa! 💝</h1>
-          <p>Essas são apenas algumas das nossas memórias juntos...<br />Te amo muito! 💖</p>
+        <div className="etapa-final">
+          <FallingHearts />
+
+          <h1> 💝 Surpresa! 💝</h1>
+          <p>
+            Essas são apenas algumas das nossas memórias juntos...<br />
+            Te amo muito! 💖
+          </p>
 
           <ImageSlider />
 
@@ -251,7 +256,6 @@ function App() {
             </p>
           </div>
 
-          {/* Música de fundo do YouTube */}
           <iframe
             width="0"
             height="0"
@@ -260,8 +264,9 @@ function App() {
             frameBorder="0"
             allow="autoplay"
           />
-        </>
+        </div>
       )}
+
 
 
     </div>

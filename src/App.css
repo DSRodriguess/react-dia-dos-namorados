@@ -1,14 +1,18 @@
-html, body, #root {
+html,
+body,
+#root {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
   font-family: Arial, sans-serif;
-  overflow: hidden;
+  overflow-y: auto;
 }
 
 .container {
-  height: 100vh;
+  min-height: 100vh;
+  padding-top: 20px;
+  padding-bottom: 20px;
   width: 100vw;
   background: linear-gradient(135deg, #ffb6c1, #ffe6e6);
   display: flex;
@@ -26,14 +30,14 @@ h1 {
 }
 
 .botoes {
-  position: relative; 
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  width: 500px; 
-  height: 150px; 
-  border: 1px solid transparent; 
+  width: 500px;
+  height: 150px;
+  border: 1px solid transparent;
 }
 
 .sim {
@@ -92,4 +96,30 @@ h1 {
   font-size: 0.8rem;
   border-radius: 8px;
   border: 1px solid #ccc;
+}
+
+
+.etapa-final {
+  animation: fadeInBrilho 3s ease-in-out;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+@keyframes fadeInBrilho {
+  0% {
+    opacity: 0;
+    filter: brightness(0.8);
+  }
+
+  50% {
+    opacity: 1;
+    filter: brightness(1.5);
+  }
+
+  100% {
+    filter: brightness(1);
+  }
 }
