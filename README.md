@@ -100,7 +100,7 @@ Este projeto foi uma oportunidade para:
 
 ## 👨‍💻 Autor
 
-Desenvolvido com 💘 por [Douglas Rodrigues](https://github.com/DSRodriguess)
+Desenvolvido com 💘 por [David Rodrigues](https://github.com/DSRodriguess)
 
 ---
 
