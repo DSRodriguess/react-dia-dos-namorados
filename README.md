@@ -6,7 +6,15 @@ Este é um projeto especial criado como presente de Dia dos Namorados, desenvolv
 
 ## 🌟 Visão Geral
 
-A aplicação apresenta uma sequência interativa de etapas, com animações, mensagens personalizadas, música de fundo e elementos visuais encantadores como corações caindo. A experiência é pensada para ser divertida, romântica e emocionalmente envolvente.
+Este app é uma experiência interativa que conduz o usuário por uma sequência de etapas com:
+
+- Animações visuais delicadas, como corações caindo
+- Mensagens personalizadas e envolventes
+- Música de fundo para ambientar o clima romântico
+- Um slider de fotos do casal
+- Efeitos especiais que tornam a navegação divertida e única
+
+Ideal para presentear alguém especial, com um toque tecnológico.
 
 ---
 
@@ -45,7 +53,10 @@ src/
 │       ├── Etapa2.jsx
 │       ├── Etapa3.jsx
 │       ├── Etapa4.jsx
+│       ├── Etapa5.jsx
 │       └── EtapaFinal.jsx
+├── Hooks/
+│   └── useBotaoFujao.js
 ├── App.jsx
 └── main.jsx
 ```
@@ -94,6 +105,9 @@ Este projeto foi uma oportunidade para:
 - Praticar componentização e organização de projetos React
 - Trabalhar com animações em React e CSS
 - Integrar música e elementos visuais de forma harmoniosa
+- Integração de mídias externas (como YouTube) para música de fundo
+- Desenvolvimento de interfaces responsivas e acessíveis
+- Criação de experiências interativas e divertidas com botões e efeitos visuais
 - Criar uma aplicação com valor emocional e técnico ao mesmo tempo
 
 ---
