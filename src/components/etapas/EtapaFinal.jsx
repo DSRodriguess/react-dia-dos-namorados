@@ -11,11 +11,13 @@ export default function EtapaFinal() {
       <div className="mensagem-final">
         <h2>Amor</h2>
         <p>
-          Desde o dia em que te conheci, minha vida se encheu de cor, sorrisos e momentos inesquecíveis. <br />
+          Desde o dia em que nos reencontramos e demos o nosso primeiro beijo naquele carnaval mágico, minha vida se encheu de cor, sorrisos e momentos inesquecíveis. <br />
           Cada foto aqui é uma lembrança do quanto você é especial pra mim. <br />
-          Obrigado por ser quem você é e por estar comigo. <br />
-          Te amo infinitamente! 💘
+          Obrigado por ser essa mulher incrível, por me inspirar todos os dias e por estar comigo. <br />
+          Eu te lobo.<br />
+          Eu te amo infinitamente! 💘
         </p>
+
       </div>
       <iframe
         width="0"

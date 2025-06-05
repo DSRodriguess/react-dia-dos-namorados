@@ -11,7 +11,10 @@ const images = [
   "/Sem título7.jpeg",
   "/Sem título8.jpeg",
   "/Sem título9.jpeg",
-  "/Sem título10.jpeg"
+  "/Sem título10.jpeg",
+  "/Sem título11.jpeg",
+  "/Sem título12.jpeg",
+  "/Sem título13.jpeg",
 ];
 
 export default function ImageSlider() {

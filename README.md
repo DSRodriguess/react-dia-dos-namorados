@@ -54,7 +54,8 @@ src/
 │       ├── Etapa3.jsx
 │       ├── Etapa4.jsx
 │       ├── Etapa5.jsx
-│       └── EtapaFinal.jsx
+│       ├── EtapaFinal.jsx
+│       └── EtapaTroll.jsx
 ├── Hooks/
 │   └── useBotaoFujao.js
 ├── App.jsx
