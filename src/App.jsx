@@ -6,6 +6,7 @@ import Etapa3 from './components/etapas/Etapa3';
 import Etapa4 from './components/etapas/Etapa4';
 import Etapa5 from './components/etapas/Etapa5';
 import Etapa6 from './components/etapas/EtapaFinal';
+import EtapaTroll from './components/etapas/EtapaTroll';
 import useBotaoFujao from './hooks/useBotaoFujao';
 
 function App() {
@@ -54,7 +55,8 @@ function App() {
       {etapa === 3 && <Etapa3 setEtapa={setEtapa} />}
       {etapa === 4 && <Etapa4 setEtapa={setEtapa} />}
       {etapa === 5 && <Etapa5 setEtapa={setEtapa} />}
-      {etapa === 6 && <Etapa6 />}
+      {etapa === 6 && <EtapaTroll setEtapa={setEtapa} />}
+      {etapa === 7 && <Etapa6 />}
     </div>
   );
 }
